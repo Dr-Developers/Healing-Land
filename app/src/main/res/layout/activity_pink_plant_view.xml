@@ -6,17 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".PinkPlantView">
 
-    <ImageView
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView5"-->
+<!--        android:layout_width="559dp"-->
+<!--        android:layout_height="341dp"-->
+<!--        android:layout_marginBottom="11dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.0"-->
+<!--        app:srcCompat="@drawable/petunia_plant" />-->
+
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView5"
-        android:layout_width="559dp"
-        android:layout_height="341dp"
-        android:layout_marginBottom="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/petunia_plant"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/petunia_plant" />
+        app:shapeAppearanceOverlay="@style/roundImageView" />
 
     <TextView
         android:id="@+id/petuniaPlantingTips"
@@ -35,16 +50,28 @@
         app:layout_constraintVertical_bias="0.523" />
 
     <TextView
+        android:id="@+id/textView10"
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:background="@drawable/round_textfield2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.657" />
+
+    <TextView
         android:id="@+id/displayPetuniaPlantingTipView"
         android:layout_width="341dp"
         android:layout_height="100dp"
-        android:background="@color/green_background"
-        android:text="TextView"
+        android:text="@string/keep_the_soil_moist_by_watering_regularly_during_prolonged_dry_periods_in_summer_plants_in_containers_will_need_regular_possibly_daily_watering_the_aim_being_to_keep_the_compost_evenly_moist_but_don_t_overwater_as_too_much_water_will_cause_the_plants"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.63" />
+        app:layout_constraintVertical_bias="0.655" />
 
     <TextView
         android:id="@+id/petuniaFertilizingTips"
@@ -63,15 +90,43 @@
         app:layout_constraintVertical_bias="0.73" />
 
     <TextView
+        android:id="@+id/textView11"
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:background="@drawable/round_textfield2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.887" />
+
+    <TextView
         android:id="@+id/displayPetuniaFertilizingTipView"
         android:layout_width="341dp"
         android:layout_height="100dp"
-        android:background="@color/green_background"
-        android:text="TextView"
+        android:text="@string/feed_petunias_at_the_time_of_planting_with_a_balanced_fertilizer_it_s_also_helpful_to_work_some_compost_into_the_soil_then_starting_in_july_and_continuing_until_the_plants_decline_in_the_fall_fertilize_every_two_to_three_weeks_with_a_liquid_fertilizer_made_for_flowering_plants"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.88" />
+        app:layout_constraintVertical_bias="0.875" />
+
+    <TextView
+        android:id="@+id/petuniaView"
+        android:layout_width="179dp"
+        android:layout_height="47dp"
+        android:text="@string/petunia_pink"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
