@@ -69,6 +69,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_family"
                 android:hint="@string/plant_name"
+                android:text="@string/red_rose"
                 android:inputType="textPersonName" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -96,6 +97,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_family"
                 android:hint="@string/botanical_name"
+                android:text="@string/rosoideae"
                 android:inputType="textPersonName" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -123,6 +125,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_family"
                 android:hint="@string/plant_type"
+                android:text="@string/flower_plant"
                 android:inputType="textPersonName" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -150,6 +153,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_family"
                 android:hint="@string/water"
+                android:text="@string/every_4_7_days"
                 android:inputType="textPersonName" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -177,6 +181,7 @@
                 android:layout_height="70sp"
                 android:fontFamily="@font/poppins_family"
                 android:hint="@string/planting_tip"
+                android:text="@string/plant_your_roses_in_a_sunny_location_with_good_drainage_fertilize_them_regularly_for_impressive_flowers_water_them_evenly_to_keep_the_soil_moist_prune_established_rose_bushes_in_early_spring_hit_these_six_simple"
                 android:inputType="textPersonName" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -204,6 +209,7 @@
                 android:layout_height="70sp"
                 android:fontFamily="@font/poppins_family"
                 android:hint="@string/fertilizing_tip"
+                android:text="@string/start_feeding_older_plants_in_spring_when_new_growth_is_about_6_inches_long_most_will_benefit_from_a_second_feeding_of_liquid_fertilizer_after_the_first_bloom_and_repeat_blooming_roses_do_best_with_regular_feeding_every_2_3_weeks_until_late_summer"
                 android:inputType="textPersonName" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -231,6 +237,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_family"
                 android:hint="@string/upload_a_photo"
+                android:text="@string/https_www_google_com_imgres_imgurl_https_3a_2f_2fimages_unsplash_com_2fphoto_1619532839116_af15d051cd3e_3fixlib_3drb_4_0_3_26ixid_3dmnwxmja3fdb8mhxzzwfyy2h8mtv8fhjlzcuymhjvc2v8zw58mhx8mhx8_26w_3d1000_26q_3d8refurl_https_3a_2f_2funsplash_com_2fs_2fphotos_2fred_robnid_s5aom6llljed2_12ahukewil_y7ctan7ahxz_zgghtkla8wqmygaeguiard0aq_0aq"
                 android:inputType="textPersonName" />
 
         </com.google.android.material.textfield.TextInputLayout>
