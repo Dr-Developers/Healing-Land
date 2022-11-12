@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        android:src="@drawable/plant_distribution"
+        android:src="@drawable/plantation_program"
         app:shapeAppearanceOverlay="@style/roundImageView"/>
 
     <TextView
@@ -27,7 +27,7 @@
         android:layout_width="261dp"
         android:layout_height="84dp"
         android:fontFamily="@font/poppins_family"
-        android:text="@string/plant_distribution"
+        android:text="Planting Campaign"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="25sp"
@@ -36,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.477" />
+        app:layout_constraintVertical_bias="0.456" />
 
     <TextView
         android:id="@+id/textView4"
@@ -45,10 +45,10 @@
         android:background="@drawable/round_textfield"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.536" />
+        app:layout_constraintVertical_bias="0.528" />
 
     <TextView
         android:id="@+id/date"
@@ -57,7 +57,7 @@
         android:layout_weight="1"
         android:fontFamily="@font/poppins_family"
         android:text="@string/dat"
-        android:textColor="@color/black"
+        android:textColor="@color/text"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
@@ -75,7 +75,7 @@
         android:layout_weight="1"
         android:fontFamily="@font/poppins_family"
         android:text="@string/times"
-        android:textColor="@color/black"
+        android:textColor="@color/text"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
@@ -92,7 +92,7 @@
         android:layout_weight="1"
         android:fontFamily="@font/poppins_family"
         android:text="@string/venuee"
-        android:textColor="@color/black"
+        android:textColor="@color/text"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
@@ -107,15 +107,20 @@
         android:background="@drawable/round_textfield2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.81" />
+        app:layout_constraintVertical_bias="0.779" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="350dp"
-        android:layout_height="120dp"
+        android:layout_width="359dp"
+        android:layout_height="154dp"
+        android:fontFamily="@font/poppins_family"
+        android:text="@string/ftfa_is_a_npo_that_addresses_food_security_environmental_sustainability_and_greening_plant_a_tree_with_food_trees_for_sri_lanka_find_out_about_our_tree_planting_initiatives_carbon_compliance_school_gardening_donate_a_tree_plant_a_tree_come_and_give_us_your_support"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView10"
         app:layout_constraintEnd_toEndOf="@+id/textView10"
         app:layout_constraintStart_toStartOf="@+id/textView10"
@@ -124,14 +129,14 @@
     <TextView
         android:id="@+id/textView11"
         android:layout_width="380dp"
-        android:layout_height="80dp"
+        android:layout_height="100dp"
         android:background="@drawable/round_textfield"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95" />
+        app:layout_constraintVertical_bias="0.967" />
 
     <TextView
         android:id="@+id/textView7"
@@ -139,7 +144,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_family"
         android:text="Coordinator Name :"
-        android:textColor="@color/black"
+        android:textColor="@color/text"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView11"
@@ -147,7 +152,7 @@
         app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="@+id/textView11"
         app:layout_constraintTop_toTopOf="@+id/textView11"
-        app:layout_constraintVertical_bias="0.16" />
+        app:layout_constraintVertical_bias="0.315" />
 
     <TextView
         android:id="@+id/textView8"
@@ -155,14 +160,105 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_family"
         android:text="Coordinator Number :"
+        android:textColor="@color/text"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.904" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="134dp"
+        android:layout_height="27dp"
+        android:fontFamily="@font/poppins_family"
+        android:text="  2022/10/26"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/date"
+        app:layout_constraintEnd_toEndOf="@+id/date"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/date"
+        app:layout_constraintTop_toTopOf="@+id/date"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="89dp"
+        android:layout_height="23dp"
+        android:text="9.30 a.m"
+        android:fontFamily="@font/poppins_family"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/time"
+        app:layout_constraintEnd_toEndOf="@+id/time"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toEndOf="@+id/date"
+        app:layout_constraintTop_toTopOf="@+id/time" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="290dp"
+        android:layout_height="26dp"
+        android:text="  Nissaranaya Forest"
+        android:fontFamily="@font/poppins_family"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/venue"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/venue"
+        app:layout_constraintTop_toTopOf="@+id/venue"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="188dp"
+        android:layout_height="19dp"
+        android:fontFamily="@font/poppins_family"
+        android:text="Mrs. Muditha Dayani"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.283" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="164dp"
+        android:layout_height="26dp"
+        android:fontFamily="@font/poppins_family"
+        android:text="0776161671"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="@+id/textView11"
-        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintHorizontal_bias="0.953"
         app:layout_constraintStart_toStartOf="@+id/textView11"
         app:layout_constraintTop_toTopOf="@+id/textView11"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.898" />
+
+    <Button
+        android:id="@+id/Event_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="16dp"
+        android:color="#A1CCB2"
+        android:text="Edit"
+        android:textColorHighlight="#A1CCB2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
