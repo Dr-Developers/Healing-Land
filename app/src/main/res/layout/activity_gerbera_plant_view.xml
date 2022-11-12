@@ -22,6 +22,22 @@
         app:shapeAppearanceOverlay="@style/roundImageView" />
 
     <TextView
+        android:id="@+id/hardyGerberaView"
+        android:layout_width="179dp"
+        android:layout_height="47dp"
+        android:text="@string/hardy_gerbra"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <TextView
         android:id="@+id/planTips"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,13 +53,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.523" />
 
+
+
     <TextView
         android:id="@+id/displayPlantingTipView"
         android:layout_width="341dp"
         android:layout_height="100dp"
         android:background="@drawable/round_textfield2"
-        android:text="TextView"
+        android:text="@string/space_them_12_to_18_inches_apart_with_the_crown_of_the_plant_at_or_slightly_above_the_soil_level_the_crown_is_the_point_where_the_stem_and_roots_meet_the_soil"
         android:padding="10dp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,7 +91,8 @@
         android:layout_height="100dp"
         android:background="@drawable/round_textfield2"
         android:padding="10dp"
-        android:text="TextView"
+        android:textColor="@color/black"
+        android:text="@string/gerbera_should_be_fed_with_a_fertilizer_based_on_nitrate_and_not_ammonium_while_ammonium_based_fertilizer_promotes_large_leaves_and_more_shading"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
