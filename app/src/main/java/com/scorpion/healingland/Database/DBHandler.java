@@ -182,4 +182,32 @@ public class DBHandler extends SQLiteOpenHelper {
         return newRow;
     }
 
+    public Boolean EventUpdate(String eventId, String eventName, String eventDescription, String date, String time, String venue, String cname, String cNumber, String imgUrl) {
+        SQLiteDatabase db =getWritableDatabase();
+        // New value for one column
+        ContentValues values = new ContentValues();
+        values.put(Fields.EventData.COLUMN_2, eventName);
+        values.put(Fields.EventData.COLUMN_3, eventDescription);
+        values.put(Fields.EventData.COLUMN_4, date);
+        values.put(Fields.EventData.COLUMN_5, time);
+        values.put(Fields.EventData.COLUMN_6, venue);
+        values.put(Fields.EventData.COLUMN_7, cname);
+        values.put(Fields.EventData.COLUMN_8, cNumber);
+        values.put(Fields.EventData.COLUMN_8, imgUrl);
+        // Which row to update, based on the title
+        String selection = Fields.EventData.COLUMN_1 + " LIKE ?";
+        String[] selectionArgs = {eventId};
+        int count = db.update(
+                Fields.EventData.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs);
+        if(count >=1){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
 }
