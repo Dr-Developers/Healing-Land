@@ -14,7 +14,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 public class HomeFragment extends Fragment {
     Button Diseases;
-    Button Tips;
+    Button Tips, events;
 
     @Nullable
     @Override
@@ -23,6 +23,7 @@ public class HomeFragment extends Fragment {
 
         Diseases = view.findViewById(R.id.diseases);
         Tips = view.findViewById(R.id.tips);
+        events = view.findViewById(R.id.events);
 
         Diseases.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,6 +44,18 @@ public class HomeFragment extends Fragment {
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment_container, tipsList);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
+
+        events.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                VisitEvent visitEvent = new VisitEvent();
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container, visitEvent);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
