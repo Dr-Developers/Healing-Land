@@ -61,7 +61,7 @@
         app:layout_constraintVertical_bias="0.871">
 
         <Button
-            android:id="@+id/visitbtn"
+            android:id="@+id/visitEvents"
             android:layout_width="203dp"
             android:layout_height="55dp"
             android:layout_marginStart="30dp"
@@ -70,6 +70,7 @@
             android:background="@drawable/round_button"
             android:fontFamily="@font/poppins_family"
             android:text="@string/visit_page"
+            android:onClick="eventlist"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="20sp" />
