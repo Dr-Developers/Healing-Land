@@ -33,6 +33,18 @@
         app:layout_constraintVertical_bias="0.0"
         app:shapeAppearanceOverlay="@style/roundImageView" />
 
+    <Button
+        android:id="@+id/Petunia_Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="16dp"
+        android:color="#A1CCB2"
+        android:text="Edit"
+        android:textColorHighlight="#A1CCB2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/petuniaPlantingTips"
         android:layout_width="wrap_content"
