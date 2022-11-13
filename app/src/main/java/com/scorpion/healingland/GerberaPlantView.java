@@ -36,9 +36,9 @@ public class GerberaPlantView extends Fragment {
     @Override
     @Nullable
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_rose_view, container,false);
+        View view = inflater.inflate(R.layout.activity_gerbera_plant_view, container,false);
 
-        Gerbera_Update =view.findViewById(R.id.Rose_Update);
+        Gerbera_Update =view.findViewById(R.id.Gerbera_Update);
 
         Gerbera_Update.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -145,7 +145,7 @@ public class DBHandler extends SQLiteOpenHelper {
         }
         cursor.close();
 
-       // return a boolean
+        // return a boolean
         if(ValidUser.isEmpty()){
             return false;
         } else {
@@ -197,7 +197,7 @@ public class DBHandler extends SQLiteOpenHelper {
     }
 
     public Boolean EventUpdate(String eventId, String eventName, String eventDescription, String date, String time, String venue, String cname, String cNumber, String imgUrl) {
-        SQLiteDatabase db =getWritableDatabase();
+        SQLiteDatabase db = getWritableDatabase();
         // New value for one column
         ContentValues values = new ContentValues();
         values.put(Fields.EventData.COLUMN_2, eventName);
@@ -216,6 +216,14 @@ public class DBHandler extends SQLiteOpenHelper {
                 values,
                 selection,
                 selectionArgs);
+
+        if (count >= 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public long AddDisease (String diseaseName, String diseaseDesc, String cause, String prevention){
         // Get the database instance in write mode
         SQLiteDatabase db = getWritableDatabase();
