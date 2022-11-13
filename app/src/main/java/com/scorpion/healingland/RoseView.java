@@ -1,18 +1,3 @@
-//package com.scorpion.healingland;
-//
-//import androidx.appcompat.app.AppCompatActivity;
-//
-//import android.os.Bundle;
-//
-//public class GerberaPlantView extends AppCompatActivity {
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_gerbera_plant_view);
-//    }
-//}
-
 package com.scorpion.healingland;
 
 import androidx.annotation.NonNull;
@@ -29,18 +14,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-public class GerberaPlantView extends Fragment {
+public class RoseView extends Fragment {
 
-    Button Gerbera_Update;
+    Button Rose_Update;
 
     @Override
     @Nullable
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_rose_view, container,false);
 
-        Gerbera_Update =view.findViewById(R.id.Rose_Update);
+        Rose_Update =view.findViewById(R.id.Rose_Update);
 
-        Gerbera_Update.setOnClickListener(new View.OnClickListener() {
+        Rose_Update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 EditGardenTips editGardenTips = new EditGardenTips();

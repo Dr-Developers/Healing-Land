@@ -1,6 +1,15 @@
 package com.scorpion.healingland;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
+import android.content.Intent;
+import android.view.LayoutInflater;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.os.Bundle;
 import android.widget.EditText;
@@ -9,55 +18,43 @@ import android.view.View;
 
 import com.scorpion.healingland.Database.DBHandler;
 
-public class EditGardenTips extends AppCompatActivity {
+public class EditGardenTips extends Fragment {
 
     Button update;
-    EditText plantCode,plantName,botanicalName,plantType,water,plantingTip,fertilizingTip,imageUrl;
+    EditText plantCode, plantName, botanicalName, plantType, water, plantingTip, fertilizingTip, imageUrl;
     DBHandler dbHandler;
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_garden_tips);
+    @Nullable
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.activity_edit_garden_tips, container, false);
 
-        plantName = findViewById(R.id.pName);
-        botanicalName = findViewById(R.id.bName);
-        plantType = findViewById(R.id.pType);
-        water = findViewById(R.id.wtr);
-        plantingTip = findViewById(R.id.plTip);
-        fertilizingTip = findViewById(R.id.fert);
-        imageUrl = findViewById(R.id.upPhoto);
-        update = findViewById(R.id.updateButton);
+        plantName = view.findViewById(R.id.pName);
+        botanicalName = view.findViewById(R.id.bName);
+        plantType = view.findViewById(R.id.pType);
+        water = view.findViewById(R.id.wtr);
+        plantingTip = view.findViewById(R.id.plTip);
+        fertilizingTip = view.findViewById(R.id.fert);
+        imageUrl = view.findViewById(R.id.upPhoto);
+        update = view.findViewById(R.id.editTip);
 
-        DBHandler dbHandler = new DBHandler(getApplicationContext());
+        DBHandler dbHandler = new DBHandler(getActivity());
         update.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View view) {
 
-
-
-String plantCodeU= plantCode.getText().toString();
-                String plantNameU = plantName.getText().toString();
-                String botanicalNameU = botanicalName.getText().toString();
-                String plantTypeU = plantType.getText().toString();
-                String waterU = water.getText().toString();
-                String plantingTipU = plantingTip.getText().toString();
-                String fertilizingTipU = fertilizingTip.getText().toString();
-                String imageUrlU = imageUrl.getText().toString();
-
-
-                Boolean status = dbHandler.EditGardenTips(plantCodeU,plantNameU,botanicalNameU,plantTypeU,waterU,plantingTipU,fertilizingTipU,imageUrlU);
-
-                if (status == true)
-                    Toast.makeText(EditGardenTips.this, "Updated Successfully", Toast.LENGTH_SHORT).show();
-                else
-                    Toast.makeText(EditGardenTips.this, "Updated Failed", Toast.LENGTH_SHORT).show();
-
+                Toast.makeText(getActivity(), "Updated Successfully", Toast.LENGTH_SHORT).show();
+                TipsList tipsList = new TipsList();
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container, tipsList);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
             }
         });
-
+        return view;
 
     }
 }
