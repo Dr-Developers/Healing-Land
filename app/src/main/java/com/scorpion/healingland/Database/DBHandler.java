@@ -145,7 +145,7 @@ public class DBHandler extends SQLiteOpenHelper {
         }
         cursor.close();
 
-       // return a boolean
+        // return a boolean
         if(ValidUser.isEmpty()){
             return false;
         } else {

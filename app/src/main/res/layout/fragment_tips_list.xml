@@ -60,6 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/rose"
+                android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textAlignment="center"/>
@@ -209,6 +210,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/hardy_gerbra"
+                android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textAlignment="center"/>
@@ -357,6 +359,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/petunia_pink"
+                android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textAlignment="center"/>
@@ -505,6 +508,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/lilly"
+                android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textAlignment="center"/>
@@ -654,6 +658,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/white_rose"
+                android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textAlignment="center"/>
@@ -789,6 +794,9 @@
 
         <!--        Next-->
 
+
+        <!--        Next-->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -800,139 +808,140 @@
             android:orientation="vertical"
             tools:ignore="MissingConstraints,UselessLeaf,UselessParent">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/white_rose"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:textAlignment="center"/>
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="@string/tulip"-->
+<!--                android:gravity="center"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textAlignment="center"/>-->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="25dp"
-                android:layout_marginEnd="25dp"
-                android:gravity="center"
-                android:orientation="horizontal">
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="25dp"-->
+<!--                android:layout_marginEnd="25dp"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal">-->
 
-                <ImageView
+<!--                <ImageView-->
+<!--                    android:id="@+id/tulip"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:contentDescription="@string/todo"-->
+<!--                    android:onClick="click"-->
+<!--                    android:src="@drawable/tulip_flower"/>-->
 
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:contentDescription="@string/todo"
-                    android:onClick="click"
-                    android:src="@drawable/white_rose"/>
 
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="start"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:orientation="vertical"-->
+<!--                    tools:ignore="MissingConstraints,UselessLeaf,UselessParent">-->
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="start"
-                    android:layout_marginTop="10dp"
-                    android:orientation="vertical"
-                    tools:ignore="MissingConstraints,UselessLeaf,UselessParent">
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="25dp"-->
+<!--                        android:gravity="center"-->
+<!--                        android:paddingVertical="10dp"-->
+<!--                        android:background="@drawable/round_whiteback"-->
+<!--                        android:orientation="horizontal">-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:text="@string/care" />-->
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="25dp"
-                        android:gravity="center"
-                        android:paddingVertical="10dp"
-                        android:background="@drawable/round_whiteback"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:textSize="12sp"
-                            android:textStyle="bold"
-                            android:text="@string/care" />
+<!--                        <TextView-->
+<!--                            android:layout_width="80dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:paddingVertical="2dp"-->
+<!--                            android:layout_marginStart="22dp"-->
+<!--                            android:paddingHorizontal="20dp"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:textAlignment="gravity"-->
+<!--                            android:textColor="@color/button"-->
+<!--                            android:background="@drawable/round_greenback"-->
+<!--                            android:text="@string/esay" />-->
+<!--                    </LinearLayout>-->
 
-                        <TextView
-                            android:layout_width="80dp"
-                            android:layout_height="match_parent"
-                            android:paddingVertical="2dp"
-                            android:layout_marginStart="22dp"
-                            android:paddingHorizontal="20dp"
-                            android:textSize="12sp"
-                            android:textStyle="bold"
-                            android:textAlignment="gravity"
-                            android:textColor="@color/button"
-                            android:background="@drawable/round_greenback"
-                            android:text="@string/esay" />
-                    </LinearLayout>
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="25dp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:gravity="center"-->
+<!--                        android:paddingVertical="10dp"-->
+<!--                        android:background="@drawable/round_whiteback"-->
+<!--                        android:orientation="horizontal">-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:layout_marginStart="20dp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:text="@string/water" />-->
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="25dp"
-                        android:layout_marginTop="5dp"
-                        android:gravity="center"
-                        android:paddingVertical="10dp"
-                        android:background="@drawable/round_whiteback"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:textSize="12sp"
-                            android:layout_marginStart="20dp"
-                            android:textStyle="bold"
-                            android:text="@string/water" />
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:paddingVertical="2dp"-->
+<!--                            android:layout_marginStart="15dp"-->
+<!--                            android:layout_marginEnd="20dp"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:paddingHorizontal="20dp"-->
+<!--                            android:textAlignment="gravity"-->
+<!--                            android:textColor="@color/button"-->
+<!--                            android:background="@drawable/round_greenback"-->
+<!--                            android:text="@string/every_4_7_days" />-->
+<!--                    </LinearLayout>-->
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:paddingVertical="2dp"
-                            android:layout_marginStart="15dp"
-                            android:layout_marginEnd="20dp"
-                            android:textSize="12sp"
-                            android:textStyle="bold"
-                            android:paddingHorizontal="20dp"
-                            android:textAlignment="gravity"
-                            android:textColor="@color/button"
-                            android:background="@drawable/round_greenback"
-                            android:text="@string/every_4_7_days" />
-                    </LinearLayout>
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="25dp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:gravity="center"-->
+<!--                        android:paddingVertical="10dp"-->
+<!--                        android:layout_marginBottom="20dp"-->
+<!--                        android:background="@drawable/round_whiteback"-->
+<!--                        android:orientation="horizontal">-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:layout_marginStart="20dp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:text="@string/sun" />-->
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="25dp"
-                        android:layout_marginTop="5dp"
-                        android:gravity="center"
-                        android:paddingVertical="10dp"
-                        android:layout_marginBottom="20dp"
-                        android:background="@drawable/round_whiteback"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:textSize="12sp"
-                            android:layout_marginStart="20dp"
-                            android:textStyle="bold"
-                            android:text="@string/sun" />
+<!--                        <TextView-->
+<!--                            android:layout_width="80dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:paddingVertical="2dp"-->
+<!--                            android:layout_marginStart="22dp"-->
+<!--                            android:layout_marginEnd="20dp"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:paddingHorizontal="20dp"-->
+<!--                            android:textAlignment="gravity"-->
+<!--                            android:textColor="@color/button"-->
+<!--                            android:background="@drawable/round_greenback"-->
+<!--                            android:text="@string/part" />-->
+<!--                    </LinearLayout>-->
 
-                        <TextView
-                            android:layout_width="80dp"
-                            android:layout_height="match_parent"
-                            android:paddingVertical="2dp"
-                            android:layout_marginStart="22dp"
-                            android:layout_marginEnd="20dp"
-                            android:textSize="12sp"
-                            android:textStyle="bold"
-                            android:paddingHorizontal="20dp"
-                            android:textAlignment="gravity"
-                            android:textColor="@color/button"
-                            android:background="@drawable/round_greenback"
-                            android:text="@string/part" />
-                    </LinearLayout>
+<!--                </LinearLayout>-->
 
-                </LinearLayout>
-
-            </LinearLayout>
+<!--            </LinearLayout>-->
 
         </LinearLayout>
 
@@ -946,6 +955,7 @@
         android:layout_marginEnd="30dp"
         android:fontFamily="@font/poppins_family"
         android:text="@string/get_your_tips"
+        android:gravity="center"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="30sp"

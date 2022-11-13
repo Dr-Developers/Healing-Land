@@ -37,6 +37,7 @@
         android:fontFamily="@font/poppins_family"
         android:text="@string/care_and_treatment_tips"
         android:textAlignment="center"
+        android:gravity="center"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"

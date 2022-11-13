@@ -68,6 +68,18 @@ public class TipsList extends Fragment {
             }
         });
 
+        petunia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                PinkPlantView petuniaView = new PinkPlantView();
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container, petuniaView);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
+
         return view;
     }
 }
