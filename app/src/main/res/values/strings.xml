@@ -118,7 +118,6 @@
     <string name="rose">Rose</string>
     <string name="hardy_gerbra">Hardy Gerbera</string>
     <string name="petunia_pink">Petunia Pink</string>
-    <string name="event_id">Event ID</string>
     <string name="add_new_disease">Add New Disease</string>
     <string name="disease_cause">Disease Cause</string>
     <string name="delete">Delete</string>
@@ -139,4 +138,5 @@
     <string name="add_new_tips">Add New Tips</string>
     <string name="lilly">Lilly</string>
     <string name="white_rose">White Rose</string>
+    <string name="tulip">Tulip</string>
 </resources>
