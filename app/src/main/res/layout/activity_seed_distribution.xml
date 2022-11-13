@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EventView">
+    tools:context=".SeedDistribution">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView11"
@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        android:src="@drawable/plantation_program"
+        android:src="@drawable/seeds"
         app:shapeAppearanceOverlay="@style/roundImageView"/>
 
     <TextView
@@ -27,7 +27,7 @@
         android:layout_width="261dp"
         android:layout_height="84dp"
         android:fontFamily="@font/poppins_family"
-        android:text="Planting Campaign"
+        android:text="@string/seeds_distribution"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="25sp"
@@ -117,7 +117,7 @@
         android:layout_width="359dp"
         android:layout_height="154dp"
         android:fontFamily="@font/poppins_family"
-        android:text="@string/ftfa_is_a_npo_that_addresses_food_security_environmental_sustainability_and_greening_plant_a_tree_with_food_trees_for_sri_lanka_find_out_about_our_tree_planting_initiatives_carbon_compliance_school_gardening_donate_a_tree_plant_a_tree_come_and_give_us_your_support"
+        android:text="Organized by the Anuragoda Regional Council, this event is scheduled to be held at the Anuragoda School. Here you can get all the nuts you need to grow and the cultivation officers will give you instructions on how to grow them systematically. You can participate in this."
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -175,7 +175,7 @@
         android:layout_width="134dp"
         android:layout_height="27dp"
         android:fontFamily="@font/poppins_family"
-        android:text="  2022/10/26"
+        android:text="  2022/11/26"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -205,7 +205,7 @@
         android:id="@+id/textView13"
         android:layout_width="290dp"
         android:layout_height="26dp"
-        android:text="  Nissaranaya Forest"
+        android:text="  Anuragoda Central College"
         android:fontFamily="@font/poppins_family"
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -222,7 +222,7 @@
         android:layout_width="188dp"
         android:layout_height="19dp"
         android:fontFamily="@font/poppins_family"
-        android:text="Mrs. Muditha Dayani"
+        android:text="Mr. Saman Perera"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -238,7 +238,7 @@
         android:layout_width="164dp"
         android:layout_height="26dp"
         android:fontFamily="@font/poppins_family"
-        android:text="0776161671"
+        android:text="0772435671"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"

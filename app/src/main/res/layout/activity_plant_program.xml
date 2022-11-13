@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EventView">
+    tools:context=".PlantProgram">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView11"
@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        android:src="@drawable/plantation_program"
+        android:src="@drawable/planting_adverticing"
         app:shapeAppearanceOverlay="@style/roundImageView"/>
 
     <TextView
@@ -27,7 +27,7 @@
         android:layout_width="261dp"
         android:layout_height="84dp"
         android:fontFamily="@font/poppins_family"
-        android:text="Planting Campaign"
+        android:text="Plant Advertising"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="25sp"
@@ -114,17 +114,19 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="359dp"
-        android:layout_height="154dp"
+        android:layout_width="355dp"
+        android:layout_height="175dp"
         android:fontFamily="@font/poppins_family"
-        android:text="@string/ftfa_is_a_npo_that_addresses_food_security_environmental_sustainability_and_greening_plant_a_tree_with_food_trees_for_sri_lanka_find_out_about_our_tree_planting_initiatives_carbon_compliance_school_gardening_donate_a_tree_plant_a_tree_come_and_give_us_your_support"
+        android:text="This event, which is being planned by the Gampaha Regional Council, will take place on the Gampaha UC grounds. The cultivation officers here will provide you with all the nuts you need to grow and will also provide you with advice on how to do it methodically. You are able to take part in this."
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView10"
         app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="@+id/textView10"
-        app:layout_constraintTop_toTopOf="@+id/textView10" />
+        app:layout_constraintTop_toTopOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.466" />
 
     <TextView
         android:id="@+id/textView11"
@@ -175,7 +177,7 @@
         android:layout_width="134dp"
         android:layout_height="27dp"
         android:fontFamily="@font/poppins_family"
-        android:text="  2022/10/26"
+        android:text="  2022/12/06"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -190,7 +192,7 @@
         android:id="@+id/textView12"
         android:layout_width="89dp"
         android:layout_height="23dp"
-        android:text="9.30 a.m"
+        android:text="9.00 a.m"
         android:fontFamily="@font/poppins_family"
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -205,7 +207,7 @@
         android:id="@+id/textView13"
         android:layout_width="290dp"
         android:layout_height="26dp"
-        android:text="  Nissaranaya Forest"
+        android:text="  Gampaha UC Ground"
         android:fontFamily="@font/poppins_family"
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -222,7 +224,7 @@
         android:layout_width="188dp"
         android:layout_height="19dp"
         android:fontFamily="@font/poppins_family"
-        android:text="Mrs. Muditha Dayani"
+        android:text="Mr. Keerthi Soyza"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -238,7 +240,7 @@
         android:layout_width="164dp"
         android:layout_height="26dp"
         android:fontFamily="@font/poppins_family"
-        android:text="0776161671"
+        android:text="0715060561"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"

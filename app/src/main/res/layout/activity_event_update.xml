@@ -87,6 +87,7 @@
                     android:layout_height="45dp"
                     android:fontFamily="@font/poppins_family"
                     android:hint="@string/event_id"
+                    android:text="E001"
                     android:inputType="textPersonName" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -114,6 +115,7 @@
                     android:layout_height="45dp"
                     android:fontFamily="@font/poppins_family"
                     android:hint="@string/event_Name"
+                    android:text="@string/seeds_distribution"
                     android:inputType="textPersonName" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -141,6 +143,8 @@
                     android:layout_height="45dp"
                     android:fontFamily="@font/poppins_family"
                     android:hint="@string/event_description"
+                    android:text="Organized by the Anuragoda Regional Council, this event is scheduled to be held at the Anuragoda School. Here you can get all the nuts you need to grow and the cultivation officers will give you instructions on how to grow them systematically. You can participate in this."
+
                     android:inputType="textPersonName" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -173,6 +177,7 @@
                         android:layout_height="45dp"
                         android:fontFamily="@font/poppins_family"
                         android:hint="@string/dates"
+                        android:text="  2022/11/26"
                         android:inputType="textPersonName" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -197,10 +202,11 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/time"
-                        android:layout_width="155dp"
+                        android:layout_width="117dp"
                         android:layout_height="45dp"
                         android:fontFamily="@font/poppins_family"
-                        android:hint="Time"
+                        android:hint="@string/timess"
+                        android:text="9.30 a.m"
                         android:inputType="textPersonName" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -231,6 +237,7 @@
                     android:layout_height="45dp"
                     android:fontFamily="@font/poppins_family"
                     android:hint="@string/venue"
+                    android:text="  Anuragoda Central College"
                     android:inputType="textPersonName" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -258,6 +265,7 @@
                     android:layout_height="45dp"
                     android:fontFamily="@font/poppins_family"
                     android:hint="@string/coordinator_name"
+                    android:text="Mr. Saman Perera"
                     android:inputType="textPersonName" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -283,6 +291,7 @@
                     android:id="@+id/coordinatorNumber"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
+                    android:text="0772435671"
                     android:fontFamily="@font/poppins_family"
                     android:hint="@string/coordinator_number"
                     android:inputType="textPersonName" />
@@ -312,12 +321,13 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_family"
                     android:hint="@string/upload_a_photo_for_promote_your_event"
+                    android:text="https://images.app.goo.gl/Sux7BUCXo9p8mAN2A"
                     android:inputType="textPersonName" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:id="@+id/submitbtn"
+                android:id="@+id/updatebtn"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
@@ -325,7 +335,7 @@
                 android:layout_marginEnd="30dp"
                 android:background="@drawable/round_button"
                 android:fontFamily="@font/poppins_family"
-                android:text="@string/submit"
+                android:text="@string/updatebtn"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="18sp" />

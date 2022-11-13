@@ -23,6 +23,15 @@
         <activity
             android:name=".RoseView"
             android:exported="true">
+            android:name=".PlantProgram"
+            android:exported="true" />
+        <activity
+            android:name=".SeedDistribution"
+            android:exported="true" />
+        <activity
+            android:name=".Events"
+            android:name=".RedRosePlantView"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
