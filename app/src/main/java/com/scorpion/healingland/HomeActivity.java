@@ -57,7 +57,7 @@ public class HomeActivity extends AppCompatActivity {
                 case R.id.tips:
 //                    header.setText("Offers");
 //                    username.setText("Here is our offers");
-                    selectedFragment = new TipsList();
+                    selectedFragment = new CareAndTreatmentTipsActivity();
                     Fragment = "offerFragment";
                     break;
 //
