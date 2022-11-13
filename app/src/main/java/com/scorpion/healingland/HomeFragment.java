@@ -39,10 +39,10 @@ public class HomeFragment extends Fragment {
         Tips.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TipsList tipsList = new TipsList();
+                CareAndTreatmentTipsActivity careAndTreatmentTipsActivity = new CareAndTreatmentTipsActivity();
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragment_container, tipsList);
+                fragmentTransaction.replace(R.id.fragment_container, careAndTreatmentTipsActivity);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }

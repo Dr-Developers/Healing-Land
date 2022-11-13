@@ -126,7 +126,6 @@
     <string name="use_clean_propagation_material_and_disease_free_seed_in_field_grown_tomato_and_pepper_rotate">Use clean propagation material and disease-free seed. In field-grown tomato and pepper rotate</string>
     <string name="four_species_of_xanthomonas">four species of Xanthomonas</string>
     <string name="plant_code">Plant Code</string>
-    <string name="event_id">Event Id</string>
     <string name="care_and_treatment_tips">Care and Treatment Tips</string>
     <string name="plant_your_roses_in_a_sunny_location_with_good_drainage_fertilize_them_regularly_for_impressive_flowers_water_them_evenly_to_keep_the_soil_moist_prune_established_rose_bushes_in_early_spring_hit_these_six_simple">Plant your roses in a sunny location with good drainage. Fertilize them regularly for impressive flowers.Water them evenly to keep the soil moist. Prune established rose bushes in early spring. Hit these six simple.</string>
     <string name="start_feeding_older_plants_in_spring_when_new_growth_is_about_6_inches_long_most_will_benefit_from_a_second_feeding_of_liquid_fertilizer_after_the_first_bloom_and_repeat_blooming_roses_do_best_with_regular_feeding_every_2_3_weeks_until_late_summer">Start feeding older plants in spring when new growth is about 6 inches long. Most will benefit from a second feeding of liquid fertilizer after the first bloom, and repeat-blooming roses do best with regular feeding every 2-3 weeks until late summer.</string>
@@ -137,5 +136,7 @@
     <string name="flower_plant">Flower Plant</string>
     <string name="rosoideae">Rosoideae</string>
     <string name="https_www_google_com_imgres_imgurl_https_3a_2f_2fimages_unsplash_com_2fphoto_1619532839116_af15d051cd3e_3fixlib_3drb_4_0_3_26ixid_3dmnwxmja3fdb8mhxzzwfyy2h8mtv8fhjlzcuymhjvc2v8zw58mhx8mhx8_26w_3d1000_26q_3d8refurl_https_3a_2f_2funsplash_com_2fs_2fphotos_2fred_robnid_s5aom6llljed2_12ahukewil_y7ctan7ahxz_zgghtkla8wqmygaeguiard0aq_0aq">https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1619532839116-af15d051cd3e%3Fixlib%3Drb-4.0.3%26ixid%3DMnwxMjA3fDB8MHxzZWFyY2h8MTV8fHJlZCUyMHJvc2V8ZW58MHx8MHx8%26w%3D1000%26q%3D8refurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fred-robnid=s5aoM6lLLjed2=12ahUKEwiL_Y7Ctan7AhXz_zgGHTklA8wQMygAegUIARD0AQ..0AQ</string>
-
+    <string name="add_new_tips">Add New Tips</string>
+    <string name="lilly">Lilly</string>
+    <string name="white_rose">White Rose</string>
 </resources>
