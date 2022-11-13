@@ -7,14 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class EventView extends AppCompatActivity {
+public class SeedDistribution extends AppCompatActivity {
 
     Button Event_update ;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_event_view);
+        setContentView(R.layout.activity_seed_distribution);
 
         Event_update =findViewById(R.id.Event_update);
 
@@ -26,6 +25,5 @@ public class EventView extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
     }
 }

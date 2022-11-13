@@ -93,6 +93,15 @@
     <string name="i_already_have_an_account">I already have an account</string>
     <string name="plantation_events">Plantation Events</string>
     <string name="add_events">Add Events</string>
+    <string name="event_id">Event Id</string>
+    <string name="timess">Time</string>
+    <string name="updatebtn">Update</string>
+    <string name="plantation_program">Plantation Program</string>
+    <string name="plant_distributions">Plant Distribution</string>
+    <string name="seeds_distribution">Seeds Distribution</string>
+    <string name="ftfa_is_a_npo_that_addresses_food_security_environmental_sustainability_and_greening_plant_a_tree_with_food_trees_for_sri_lanka_find_out_about_our_tree_planting_initiatives_carbon_compliance_school_gardening_donate_a_tree_plant_a_tree_come_and_give_us_your_support"><![CDATA[FTFA Is A NPO That Addresses Food Security, Environmental Sustainability and Greening. Plant a Tree with Food & Trees For Sri Lanka. Find Out About Our Tree Planting Initiatives! Carbon Compliance. School Gardening. Donate a Tree. Plant a tree. Come and give us your support]]></string>
+    <string name="plant_adertising">Plant Adertising</string>
+    <string name="seed_distribution">Seed Distribution</string>
     <string name="cure_and_prevent_plant_diseases">Cure and Prevent Plant Diseases</string>
     <string name="plant_diseases_home">Plant Diseases Home</string>
     <string name="plant_diseases">Plant Diseases</string>
@@ -128,4 +137,5 @@
     <string name="flower_plant">Flower Plant</string>
     <string name="rosoideae">Rosoideae</string>
     <string name="https_www_google_com_imgres_imgurl_https_3a_2f_2fimages_unsplash_com_2fphoto_1619532839116_af15d051cd3e_3fixlib_3drb_4_0_3_26ixid_3dmnwxmja3fdb8mhxzzwfyy2h8mtv8fhjlzcuymhjvc2v8zw58mhx8mhx8_26w_3d1000_26q_3d8refurl_https_3a_2f_2funsplash_com_2fs_2fphotos_2fred_robnid_s5aom6llljed2_12ahukewil_y7ctan7ahxz_zgghtkla8wqmygaeguiard0aq_0aq">https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1619532839116-af15d051cd3e%3Fixlib%3Drb-4.0.3%26ixid%3DMnwxMjA3fDB8MHxzZWFyY2h8MTV8fHJlZCUyMHJvc2V8ZW58MHx8MHx8%26w%3D1000%26q%3D8refurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fred-robnid=s5aoM6lLLjed2=12ahUKEwiL_Y7Ctan7AhXz_zgGHTklA8wQMygAegUIARD0AQ..0AQ</string>
+
 </resources>
