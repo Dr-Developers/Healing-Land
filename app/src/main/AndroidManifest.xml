@@ -14,6 +14,7 @@
         android:theme="@style/Theme.HealingLand"
         tools:targetApi="31">
         <activity
+
             android:name=".GetYourAllTips"
             android:exported="true">
             <meta-data
@@ -56,26 +57,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".EventView"
-            android:exported="true" />
-        <activity
-            android:name=".EditDiseases"
-            android:exported="true" />
-        <activity
-            android:name=".VisitEvent"
-            android:exported="true">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".AddDiseases"
-            android:exported="true">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".PinkPlantView"
             android:exported="true">
             <meta-data
@@ -103,12 +84,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".EventAdd"
-            android:exported="true" />
-        <activity
-            android:name=".EventUpdate"
-            android:exported="true" />
         <activity
             android:name=".HomeActivity"
             android:exported="true">
