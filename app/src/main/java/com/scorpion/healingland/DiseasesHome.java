@@ -1,37 +1,30 @@
 package com.scorpion.healingland;
 
-import android.annotation.SuppressLint;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-
-public class EditDiseases extends Fragment {
-    Button update, delete;
+public class DiseasesHome extends Fragment {
+    Button visitPage;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_edit_diseases, container, false);
+        View view = inflater.inflate(R.layout.fragment_diseases_home, container,false);
 
-        update = view.findViewById(R.id.uDisease);
+        visitPage = view.findViewById(R.id.diseasesVisit);
 
-        update.setOnClickListener(new View.OnClickListener() {
+        visitPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Updated Successfully!", Toast.LENGTH_SHORT).show();
                 PlantDiseases plantDiseases = new PlantDiseases();
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();

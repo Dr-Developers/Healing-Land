@@ -4,47 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddDiseases">
-
-    <TextView
-        android:id="@+id/addPlantDiseases"
-        android:layout_width="243dp"
-        android:layout_height="99dp"
-        android:fontFamily="@font/poppins_family"
-        android:text="@string/add_plant_disease_details"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.050000012" />
+    tools:context=".PlantUpdate">
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="141dp"
-        android:layout_height="187dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/login_image"
+        android:foregroundGravity="left"
+        android:src="@drawable/background_decoration"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/background_decoration" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="-2dp" />
+
 
     <LinearLayout
-        android:layout_width="423dp"
-        android:layout_height="650dp"
+        android:id="@+id/loginContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="vertical"
+        android:layout_marginTop="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.281"
+        tools:ignore="MissingConstraints,UselessLeaf,UselessParent">
+
+        <TextView
+            android:id="@+id/headingTextView"
+            android:layout_width="245dp"
+            android:layout_height="33dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppins_family"
+            android:text="@string/edit_plant_details"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="83dp"
+            tools:layout_editor_absoluteY="58dp" />
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
@@ -53,158 +54,148 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="0dp"
             android:layout_marginEnd="30dp"
-            android:padding="4dp"
+            android:padding="5dp"
             android:textColorHint="@color/placeholder"
-            app:boxCornerRadiusBottomEnd="50dp"
-            app:boxCornerRadiusBottomStart="50dp"
-            app:boxCornerRadiusTopEnd="50dp"
-            app:boxCornerRadiusTopStart="50dp"
+            app:boxCornerRadiusBottomEnd="13dp"
+            app:boxCornerRadiusBottomStart="13dp"
+            app:boxCornerRadiusTopEnd="13dp"
+            app:boxCornerRadiusTopStart="13dp"
             app:boxStrokeColor="@color/placeholder"
             app:hintTextColor="@color/placeholder"
             app:startIconTint="@color/placeholder">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/diseaseName"
+                android:id="@+id/plant_Name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:fontFamily="@font/poppins_family"
+                android:hint="@string/plant_name"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="0dp"
+            android:padding="5dp"
+            android:textColorHint="@color/placeholder"
+            app:boxCornerRadiusBottomEnd="13dp"
+            app:boxCornerRadiusBottomStart="13dp"
+            app:boxCornerRadiusTopEnd="13dp"
+            app:boxCornerRadiusTopStart="13dp"
+            app:boxStrokeColor="@color/placeholder"
+            app:hintTextColor="@color/placeholder"
+            app:startIconTint="@color/placeholder">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/plant_description"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:fontFamily="@font/poppins_family"
+                android:hint="@string/plant_description"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:padding="5dp"
+            android:textColorHint="@color/placeholder"
+            app:boxCornerRadiusBottomEnd="13dp"
+            app:boxCornerRadiusBottomStart="13dp"
+            app:boxCornerRadiusTopEnd="13dp"
+            app:boxCornerRadiusTopStart="13dp"
+            app:boxStrokeColor="@color/placeholder"
+            app:hintTextColor="@color/placeholder"
+            app:startIconTint="@color/placeholder">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/plant_price"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:fontFamily="@font/poppins_family"
+                android:hint="@string/plant_price"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:padding="5dp"
+            android:textColorHint="@color/placeholder"
+            app:boxCornerRadiusBottomEnd="13dp"
+            app:boxCornerRadiusBottomStart="13dp"
+            app:boxCornerRadiusTopEnd="13dp"
+            app:boxCornerRadiusTopStart="13dp"
+            app:boxStrokeColor="@color/placeholder"
+            app:hintTextColor="@color/placeholder"
+            app:startIconTint="@color/placeholder">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/quantity"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:fontFamily="@font/poppins_family"
+                android:hint="@string/quantity"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:padding="5dp"
+            android:textColorHint="@color/placeholder"
+            app:boxCornerRadiusBottomEnd="13dp"
+            app:boxCornerRadiusBottomStart="13dp"
+            app:boxCornerRadiusTopEnd="13dp"
+            app:boxCornerRadiusTopStart="13dp"
+            app:boxStrokeColor="@color/placeholder"
+            app:hintTextColor="@color/placeholder"
+            app:startIconTint="@color/placeholder">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/plant_photo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_family"
-                android:hint="@string/disease_name"
+                android:hint="@string/upload_a_photo_of_your_plant"
                 android:inputType="textPersonName" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/plantUpdate"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="0dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="30dp"
-            android:padding="4dp"
-            android:textColorHint="@color/placeholder"
-            app:boxCornerRadiusBottomEnd="25dp"
-            app:boxCornerRadiusBottomStart="25dp"
-            app:boxCornerRadiusTopEnd="25dp"
-            app:boxCornerRadiusTopStart="25dp"
-            app:boxStrokeColor="@color/placeholder"
-            app:hintTextColor="@color/placeholder"
-            app:startIconTint="@color/placeholder">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/diseaseDescription"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:fontFamily="@font/poppins_family"
-                android:hint="@string/disease_description"
-                android:inputType="textPersonName" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginEnd="30dp"
-            android:padding="4dp"
-            android:textColorHint="@color/placeholder"
-            app:boxCornerRadiusBottomEnd="50dp"
-            app:boxCornerRadiusBottomStart="50dp"
-            app:boxCornerRadiusTopEnd="50dp"
-            app:boxCornerRadiusTopStart="50dp"
-            app:boxStrokeColor="@color/placeholder"
-            app:hintTextColor="@color/placeholder"
-            app:startIconTint="@color/placeholder">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/diseaseCause"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_family"
-                android:hint="Disease Cause"
-                android:inputType="textPersonName" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginEnd="30dp"
-            android:padding="4dp"
-            android:textColorHint="@color/placeholder"
-            app:boxCornerRadiusBottomEnd="25dp"
-            app:boxCornerRadiusBottomStart="25dp"
-            app:boxCornerRadiusTopEnd="25dp"
-            app:boxCornerRadiusTopStart="25dp"
-            app:boxStrokeColor="@color/placeholder"
-            app:hintTextColor="@color/placeholder"
-            app:startIconTint="@color/placeholder">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/howToPrevent"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:fontFamily="@font/poppins_family"
-                android:hint="@string/how_to_prevent_disease"
-                android:inputType="textPersonName" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginEnd="30dp"
-            android:padding="4dp"
-            android:textColorHint="@color/placeholder"
-            app:boxCornerRadiusBottomEnd="50dp"
-            app:boxCornerRadiusBottomStart="50dp"
-            app:boxCornerRadiusTopEnd="50dp"
-            app:boxCornerRadiusTopStart="50dp"
-            app:boxStrokeColor="@color/placeholder"
-            app:hintTextColor="@color/placeholder"
-            app:startIconTint="@color/placeholder">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/uploadPhotos"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_family"
-                android:hint="@string/upload_a_photo"
-                android:inputType="textPersonName" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/submitbutton"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="30dp"
-                android:background="@drawable/round_button"
-                android:fontFamily="@font/poppins_family"
-                android:text="@string/submit"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
-
-
-        </LinearLayout>
-
+            android:background="@drawable/round_button"
+            android:fontFamily="@font/poppins_family"
+            android:text="@string/update"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

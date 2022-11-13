@@ -12,37 +12,37 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-public class HomeFragment extends Fragment {
-    Button Diseases;
-    Button Tips;
+public class PlantDiseases extends Fragment {
+    Button bacterialSpotView;
+    Button addNewDisease;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_home, container,false);
+        View view = inflater.inflate(R.layout.fragment_plant_diseases, container,false);
 
-        Diseases = view.findViewById(R.id.diseases);
-        Tips = view.findViewById(R.id.tips);
+        bacterialSpotView = view.findViewById(R.id.bacterialSpotBtn);
+        addNewDisease = view.findViewById(R.id.addDisease);
 
-        Diseases.setOnClickListener(new View.OnClickListener() {
+        bacterialSpotView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DiseasesHome diseasesHome = new DiseasesHome();
+                BacterialSpotView bacterialSpotView = new BacterialSpotView();
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragment_container, diseasesHome);
+                fragmentTransaction.replace(R.id.fragment_container, bacterialSpotView);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
         });
 
-        Tips.setOnClickListener(new View.OnClickListener() {
+        addNewDisease.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TipsList tipsList = new TipsList();
+                AddDiseases addDiseases = new AddDiseases();
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragment_container, tipsList);
+                fragmentTransaction.replace(R.id.fragment_container, addDiseases);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
