@@ -25,7 +25,7 @@
 
         <TextView
             android:id="@+id/editHeadingTextView"
-            android:layout_width="130dp"
+            android:layout_width="160dp"
             android:layout_height="126dp"
             android:fontFamily="@font/poppins_family"
             android:text="@string/edit_your_event"
@@ -48,8 +48,10 @@
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
             tools:ignore="MissingConstraints,UselessLeaf,UselessParent">
 
             <TextView
@@ -87,8 +89,8 @@
                     android:layout_height="45dp"
                     android:fontFamily="@font/poppins_family"
                     android:hint="@string/event_id"
-                    android:text="E001"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:text="E001" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -115,8 +117,8 @@
                     android:layout_height="45dp"
                     android:fontFamily="@font/poppins_family"
                     android:hint="@string/event_Name"
-                    android:text="@string/seeds_distribution"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:text="@string/seeds_distribution" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -143,9 +145,9 @@
                     android:layout_height="45dp"
                     android:fontFamily="@font/poppins_family"
                     android:hint="@string/event_description"
-                    android:text="Organized by the Anuragoda Regional Council, this event is scheduled to be held at the Anuragoda School. Here you can get all the nuts you need to grow and the cultivation officers will give you instructions on how to grow them systematically. You can participate in this."
+                    android:inputType="textPersonName"
 
-                    android:inputType="textPersonName" />
+                    android:text="Organized by the Anuragoda Regional Council, this event is scheduled to be held at the Anuragoda School. Here you can get all the nuts you need to grow and the cultivation officers will give you instructions on how to grow them systematically. You can participate in this." />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -177,8 +179,8 @@
                         android:layout_height="45dp"
                         android:fontFamily="@font/poppins_family"
                         android:hint="@string/dates"
-                        android:text="  2022/11/26"
-                        android:inputType="textPersonName" />
+                        android:inputType="textPersonName"
+                        android:text="  2022/11/26" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -206,8 +208,8 @@
                         android:layout_height="45dp"
                         android:fontFamily="@font/poppins_family"
                         android:hint="@string/timess"
-                        android:text="9.30 a.m"
-                        android:inputType="textPersonName" />
+                        android:inputType="textPersonName"
+                        android:text="9.30 a.m" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -237,8 +239,8 @@
                     android:layout_height="45dp"
                     android:fontFamily="@font/poppins_family"
                     android:hint="@string/venue"
-                    android:text="  Anuragoda Central College"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:text="  Anuragoda Central College" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -265,8 +267,8 @@
                     android:layout_height="45dp"
                     android:fontFamily="@font/poppins_family"
                     android:hint="@string/coordinator_name"
-                    android:text="Mr. Saman Perera"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:text="Mr. Saman Perera" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -291,10 +293,10 @@
                     android:id="@+id/coordinatorNumber"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
-                    android:text="0772435671"
                     android:fontFamily="@font/poppins_family"
                     android:hint="@string/coordinator_number"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:text="0772435671" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -321,8 +323,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_family"
                     android:hint="@string/upload_a_photo_for_promote_your_event"
-                    android:text="https://images.app.goo.gl/Sux7BUCXo9p8mAN2A"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:text="https://images.app.goo.gl/Sux7BUCXo9p8mAN2A" />
 
             </com.google.android.material.textfield.TextInputLayout>
 

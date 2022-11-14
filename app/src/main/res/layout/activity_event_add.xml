@@ -197,7 +197,7 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/time"
-                        android:layout_width="155dp"
+                        android:layout_width="115dp"
                         android:layout_height="45dp"
                         android:fontFamily="@font/poppins_family"
                         android:hint="Time"
