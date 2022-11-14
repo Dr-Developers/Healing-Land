@@ -140,4 +140,5 @@
     <string name="lilly">Lilly</string>
     <string name="white_rose">White Rose</string>
     <string name="tulip">Tulip</string>
+    <string name="event_id">Event Id</string>
 </resources>
