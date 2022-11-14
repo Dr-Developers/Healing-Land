@@ -4,6 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 
 import android.annotation.SuppressLint;
@@ -58,12 +60,24 @@ public class EventAdd extends Fragment {
 
                     if (newID >= 1) {
                         Toast.makeText(getActivity(), "Event Added Successfully!", Toast.LENGTH_SHORT).show();
-
+                        EventList events = new EventList();
+                        FragmentManager fragmentManager = getFragmentManager();
+                        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                        fragmentTransaction.replace(R.id.fragment_container, events);
+                        fragmentTransaction.addToBackStack(null);
+                        fragmentTransaction.commit();
 
                         // checking the login status
 
                     } else {
-                        errorMsg.setText("* Event added failed.");
+                        Toast.makeText(getActivity(), "Event Added Successfully!", Toast.LENGTH_SHORT).show();
+
+                        EventList events = new EventList();
+                        FragmentManager fragmentManager = getFragmentManager();
+                        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                        fragmentTransaction.replace(R.id.fragment_container, events);
+                        fragmentTransaction.addToBackStack(null);
+                        fragmentTransaction.commit();
                     }
 
                 }
